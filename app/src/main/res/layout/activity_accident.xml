@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AccidentActivity"
+    android:background="@color/white"
+    >
+
+<!--    Accident report-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradient_back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_back"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Accident Report"
+                android:textAlignment="center"
+                android:textColor="@color/background_white"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/toolbar"
+        android:src="@drawable/img_camera" />
+
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/image"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_back_white"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Location"
+        android:inputType="textMultiLine"
+        android:paddingStart="18dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:gravity="start"
+        android:paddingTop="15dp"
+
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etInvolvedVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etLocation"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_back_white"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Involved Vehicle"
+        android:inputType="textMultiLine"
+        android:paddingStart="18dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:gravity="start"
+        android:paddingTop="15dp"
+
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etRoadCondition"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etInvolvedVehicle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_back_white"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Road Condition"
+        android:inputType="textMultiLine"
+        android:paddingStart="18dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:gravity="start"
+        android:paddingTop="15dp"
+
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etRoadCondition"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_back_white"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Time"
+        android:inputType="time"
+        android:paddingStart="18dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:gravity="start"
+        android:paddingTop="15dp"
+
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etTime"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_back_white"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Date"
+        android:inputType="date"
+        android:paddingStart="18dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:gravity="start"
+        android:paddingTop="15dp"
+
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btSent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/etDate"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_back_colored"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Sent"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>
